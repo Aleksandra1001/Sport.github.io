@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        width: 251px;
+        img {
+            width: 100%;
+        }
+    }
+    &__official {
+        font-weight: 500;
+        font-size: 12px; 
+        text-align: center;       
+        color: #FFFFFF;
+        span {
+            display: block;
+            font-size: 18px; 
+            margin-top: 7px;       
+        }
+    }
+    &__phone {
+        display: block;
+        font-weight: 700;
+        font-size: 18px; 
+        color: #FFFFFF;
+        text-decoration: none;
+        &:hover {
+            color: black;
+            // text-decoration: none; он прописал здесь, а я там, потому что не здесь не работает
+        }      
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;  
+        //  особо не заметно.почему?.
+    }
+}
